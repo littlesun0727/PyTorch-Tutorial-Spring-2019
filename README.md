@@ -25,6 +25,7 @@ Please install [PyTorch](http://pytorch.org/) as indicated. Please be careful ab
 
 ## Run
 Run command ```python3 (name of python file).py```
+
 The dataset should be downloaded automatically. STL10 is a large dataset, and it may take several minutes.
 
 ## Homework Tips
