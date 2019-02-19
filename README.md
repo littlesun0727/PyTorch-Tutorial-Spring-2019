@@ -2,6 +2,7 @@
 PyTorch tutorial codes for course EL-7143 Advanced Machine Learning, NYU, Spring 2019
 
 ## Requirements:
+Python 3
 Pytorch 1.01
 
 ## Notes:
@@ -24,9 +25,8 @@ Please install [PyTorch](http://pytorch.org/) as indicated. Please be careful ab
 
 ## Run
 The dataset should be downloaded automatically. STL10 is a large dataset, and it may take several minutes.
-```
-python3 train.py
-```
+
+```python3 train.py```
 
 ## Homework Tips
 1. You need to modify the codes and add functions like plotting for your homework. 
