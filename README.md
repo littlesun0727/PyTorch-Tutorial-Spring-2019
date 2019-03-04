@@ -6,9 +6,10 @@ Python 3
 Pytorch 1.01
 
 ## Notes:
-We have 2 recitations in total:
+We have 3 recitations in total:
 1. Introduction to Neural Networks and PyTorch.
-2. GANs, ResNets, Autoencoders, VisualBackProp, Skip connections, Batch normalization.
+2. How to build a neural netowrk in PyTorch?
+3. GANs, ResNets, Autoencoders, VisualBackProp, Skip connections, Batch normalization.
 
 ### Recitation 1:
 1. calculation: ways to calculate cosine similarity of vectors.
@@ -16,6 +17,9 @@ We have 2 recitations in total:
 3. regression: regression for polynomial functions.
 
 ### Recitation 2:
+Walk through PyTorch official examples: [MNIST](https://github.com/pytorch/examples/tree/master/mnist)
+
+### Recitation 3:
 1. autoencoder: autoencoder + Unet.
 2. classification: STL10 image classification + ResNet + Visual BackProp.
 3. GAN: generative adversarial nets.
