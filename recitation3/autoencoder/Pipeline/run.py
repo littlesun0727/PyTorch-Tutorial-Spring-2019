@@ -37,11 +37,12 @@ def test():
     model.eval()
     test_loss = 0
     correct = 0
-    for data, target in test_loader:
-        if args.cuda:
-            data, target = data.cuda(), target.cuda()
-        data, target = Variable(data, volatile=True), Variable(target)
-        output = model(data)
-        test_loss += F.mse_loss(output, data).item() # sum up batch loss
+    with torch.no_grad():
+        for data, target in test_loader:
+            if args.cuda:
+                data, target = data.cuda(), target.cuda()
+            data, target = Variable(data), Variable(target)
+            output = model(data)
+            test_loss += F.mse_loss(output, data).item() # sum up batch loss
     test_loss /= len(test_loader.dataset)
     print('\nTest set: Average loss: {:.4f}'.format(test_loss))

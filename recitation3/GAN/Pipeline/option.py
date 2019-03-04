@@ -15,7 +15,7 @@ parser.add_argument('--optimizer',default='Adam', metavar='OPTM',
                     help='define optimizer (default: Adam)') 
 parser.add_argument('--dataset',default='mnist', metavar='DSET',
                     help='define dataset')               
-parser.add_argument('--lr', type=float, default=2e-4, metavar='LR',
+parser.add_argument('--lr', type=float, default=0.0002, metavar='LR',
                     help='learning rate')
 parser.add_argument('--continue_training', action='store_true', default=False,
                      help='continue training')

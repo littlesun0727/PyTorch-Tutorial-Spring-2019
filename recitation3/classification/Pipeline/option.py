@@ -13,8 +13,8 @@ parser.add_argument('--epochs', type=int, default=500, metavar='N',
                     help='number of epochs to train (default: 10)')
 parser.add_argument('--optimizer',default='Adam', metavar='OPTM',
                     help='define optimizer (default: Adam)')               
-parser.add_argument('--lr', type=float, default=0.01, metavar='LR',
-                    help='learning rate (default: 0.01)')
+parser.add_argument('--lr', type=float, default=0.001, metavar='LR',
+                    help='learning rate (default: 0.001)')
 parser.add_argument('--dataset',default='stl10', metavar='DSET',
                     help='define dataset') 
 parser.add_argument('--visualize', action='store_false', default=True,
