@@ -1,4 +1,4 @@
-# PyTorch tutorial codes for course EL-9133 Advanced Machine Learning, NYU, Spring 2019
+# PyTorch tutorial codes for course EL-7143 Advanced Machine Learning, NYU, Spring 2019
 # Data/data.py: load data and process data
 # read: http://pytorch.org/docs/master/data.html
 # data loaders are *iterators*!

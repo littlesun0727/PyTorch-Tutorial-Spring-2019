@@ -1,4 +1,4 @@
-# PyTorch tutorial codes for course EL-9133 Advanced Machine Learning, NYU, Spring 2019
+# PyTorch tutorial codes for course EL-7143 Advanced Machine Learning, NYU, Spring 2019
 # Pipeline/run.py: define functions train(epoch) and test()
 import torch
 from torch.autograd import Variable
