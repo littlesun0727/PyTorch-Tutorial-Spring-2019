@@ -1,4 +1,4 @@
-# PyTorch tutorial codes for course EL-9133 Advanced Machine Learning, NYU, Spring 2018
+# PyTorch tutorial codes for course EL-9133 Advanced Machine Learning, NYU, Spring 2019
 # Pipeline/run.py: define functions train(epoch) and test()
 import torch
 from torch.autograd import Variable
@@ -65,7 +65,7 @@ def train(epoch):
         ## --Print Loss-- ##
         print('[%d/%d][%d/%d] Loss_D: %.4f Loss_G: %.4f D(x): %.4f D(G(z)): %.4f / %.4f'
               % (epoch, args.epochs, batch_idx, len(train_loader),
-                 errD.data[0], errG.data[0], D_x, D_G_z1, D_G_z2))
+                 errD.item(), errG.item(), D_x, D_G_z1, D_G_z2))
 
     # Save real and fake images
     if epoch % args.save_image_epoch == 0:

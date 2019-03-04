@@ -1,4 +1,4 @@
-# PyTorch tutorial codes for course EL-9133 Advanced Machine Learning, NYU, Spring 2018
+# PyTorch tutorial codes for course EL-9133 Advanced Machine Learning, NYU, Spring 2019
 # Architecture/model.py: define model
 import math
 import torch

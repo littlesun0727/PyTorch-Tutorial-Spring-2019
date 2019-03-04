@@ -1,4 +1,4 @@
-# PyTorch tutorial codes for course EL-9133 Advanced Machine Learning, NYU, Spring 2018
+# PyTorch tutorial codes for course EL-9133 Advanced Machine Learning, NYU, Spring 2019
 # Pipeline/run.py: define functions train(epoch) and test()
 import torch
 from torch.autograd import Variable
@@ -24,7 +24,7 @@ def train(epoch):
         if batch_idx % args.log_interval == 0:
             print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
                 epoch, batch_idx * len(data), len(train_loader.dataset),
-                100. * batch_idx / len(train_loader), loss.data[0]))
+                100. * batch_idx / len(train_loader), loss.item()))
                 
     if epoch % args.save_image_epoch:
         utils.save_image(data.data, 'origin_pictures.png', normalize=True, scale_each=True)
@@ -42,6 +42,6 @@ def test():
             data, target = data.cuda(), target.cuda()
         data, target = Variable(data, volatile=True), Variable(target)
         output = model(data)
-        test_loss += F.mse_loss(output, data).data[0] # sum up batch loss
+        test_loss += F.mse_loss(output, data).item() # sum up batch loss
     test_loss /= len(test_loader.dataset)
     print('\nTest set: Average loss: {:.4f}'.format(test_loss))
